@@ -1,0 +1,39 @@
+CREATE DATABASE greatway_coop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+EXIT;{
+  "name": "greatway-coop-management",
+  "version": "1.0.0",
+  "description": "Member Management System for Greatway Cooperative Society",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npm run dev --prefix backend & npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:backend": "npm run build --prefix backend",
+    "start": "npm run start --prefix backend",
+    "db:setup": "cd database && npm run init",
+    "db:migrate": "cd database && npm run migrate",
+    "test": "npm run test --prefix backend && npm run test --prefix frontend",
+    "test:backend": "npm run test --prefix backend",
+    "test:frontend": "npm run test --prefix frontend",
+    "lint": "npm run lint --prefix backend && npm run lint --prefix frontend"
+  },
+  "keywords": [
+    "cooperative",
+    "member-management",
+    "financial-records",
+    "loan-management"
+  ],
+  "author": "Greatway Cooperative Society",
+  "license": "Proprietary",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "database"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

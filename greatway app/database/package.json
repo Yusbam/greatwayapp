@@ -1,0 +1,9 @@
+{
+  "name": "greatway-database",
+  "version": "1.0.0",
+  "description": "MySQL database setup for Greatway Cooperative",
+  "scripts": {
+    "init": "node scripts/init.js",
+    "migrate": "node scripts/migrate.js"
+  }
+}
